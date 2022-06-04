@@ -1,0 +1,1 @@
+docker buildx build --platform linux/arm64,linux/amd64 -t nikosmitrop1995/rpi-ros-foxy:test_v1 --push .
