@@ -1,0 +1,12 @@
+services:
+  darkpaw:
+    command: ros2 run demo_nodes_cpp talker
+    container_name: darkpaw
+    environment:
+      - DISPLAY
+    image: nikosmitrop1995/ros2:base
+    network_mode: "host"
+    privileged: true
+    volumes:
+      - $HOME/.Xauthority:/root/.Xauthority
+      - /media:/media
