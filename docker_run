@@ -4,6 +4,7 @@ docker run --name darkpaw \
 --restart=always \
 --net=host \
 --env="DISPLAY" \
+--volume="$HOME/.ssh:/root/.ssh" \
 --volume="$HOME/.Xauthority:/root/.Xauthority" \
 --volume="/media:/media" \
 nikosmitrop1995/darkpaw:v0.1.0 /bin/zsh
