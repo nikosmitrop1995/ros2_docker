@@ -1,4 +1,4 @@
-docker run --name ros2_base \
+docker run --name darkpaw \
 -it -w /root \
 --privileged \
 --restart=always \
@@ -6,4 +6,4 @@ docker run --name ros2_base \
 --env="DISPLAY" \
 --volume="$HOME/.Xauthority:/root/.Xauthority" \
 --volume="/media:/media" \
-nikosmitrop1995/ros2:base /bin/zsh
+nikosmitrop1995/darkpaw:v0.1.0 /bin/zsh
