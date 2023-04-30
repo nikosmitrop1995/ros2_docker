@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     iputils-ping \
     mlocate \
     nano \
+    openssh-client \
     python3-colcon-common-extensions \
     python3-colcon-mixin \
     python3-pip \
@@ -24,7 +25,8 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     python3-vcstool \
     ros-${ROS_DISTRO}-demo-nodes-cpp \
     wget \ 
-    zsh
+    zsh \
+    && pip3 install adafruit-circuitpython-servokit
 
 # bootstrap rosdep
 RUN rosdep init && \
