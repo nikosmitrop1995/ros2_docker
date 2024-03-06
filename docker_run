@@ -1,9 +1,0 @@
-docker run --name ros2_base \
--it -w /root \
---privileged \
---restart=always \
---net=host \
---env="DISPLAY" \
---volume="$HOME/.Xauthority:/root/.Xauthority" \
---volume="/media:/media" \
-nikosmitrop1995/ros2:base /bin/zsh
