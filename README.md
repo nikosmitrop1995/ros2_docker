@@ -1,25 +1,25 @@
-# ros2_docker
-Dockerfile for ROS2 Container
+# microbot_docker
+This repo contains the Dockerfile and the scripts for building and running the container of MicroBot.
 
-### Pull the image:
-```
-./docker_pull
-```
-### Bring up the image:
-```
-./docker_run
-```
-### Attach terminal to the image:
-```
-./docker_exec
-```
-If you want to run the commands from any directory without using `./` :
-```
-echo "export PATH=$PATH:{path_where_the_repo_is_located}/ros2_docker" >> $HOME/.bashrc
-source ~/.bashrc
-```
-OR
-```
-echo "export PATH=$PATH:{path_where_the_repo_is_located}/ros2_docker" >> $HOME/.zshrc
-source ~/.zshrc
-```
+### Info
+We will use a script based on `docker build` for making an image out of the Dockerfile.
+
+Then use `devcontainer` to build the container.
+
+Finally, `docker exec` for accessing to it.
+
+### Prerequisites:
+Install docker 
+
+Install nodejs vesrion 18  using binaries. See here https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04#option-2-installing-node-js-with-apt-using-a-nodesource-ppa 
+
+Build the image
+
+Run the container
+
+
+How to setup microROS (find an easier way)
+	On my PC
+	On the microcontroller
+
+Dowload, install and run the repos to controll microBot
