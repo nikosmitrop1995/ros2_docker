@@ -1,1 +1,2 @@
-docker exec -it -w /root ros2_base /bin/zsh
+#! /bin/bash
+docker exec -it microbot /bin/zsh

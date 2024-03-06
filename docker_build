@@ -1,1 +1,2 @@
-docker buildx build --platform linux/arm64,linux/amd64 -t nikosmitrop1995/ros2:base --push .
+#! /bin/bash
+docker build -t nikosmitrop1995/microbot:latest --push .
